@@ -1,0 +1,56 @@
+3
+3
+3 1 2
+1 1 2
+1 4 2
+3
+3 4 2
+9 5 1
+8 1 2
+2
+1 2
+2 1
+
+
+#include <bits/stdc++.h>
+typedef long long ll;
+typedef double db;
+using namespace std;
+//JohnBelus//
+
+int n, a[101][101] = {};
+bool col[101] = {};
+int S = 0;
+
+void Try(int pos, int &s) {
+    for(int j = 1; j <= n; j++) {
+        if(!col[j]) {
+            col[j] = true;
+            s += a[pos][j];
+            if(pos==n) {
+                S = max(s, S);
+            }
+            else {
+                Try(pos+1, s);
+            }
+            col[j] = false;
+            s -= a[pos][j];
+        }
+    }
+}
+
+int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(NULL); cout.tie(NULL);
+    int t; cin >> t;
+    while(t--){
+        cin >> n;
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j <= n; j++) cin >> a[i][j];
+        }
+        S = 0;
+        int s = 0;
+        Try(1, s);
+        cout << S << endl;
+    }
+}

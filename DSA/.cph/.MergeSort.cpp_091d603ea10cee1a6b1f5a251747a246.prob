@@ -1,0 +1,1 @@
+{"name":"Local: MergeSort","url":"c:\\Users\\fbkie\\OneDrive\\Documents\\CODEPTIT\\DSA\\MergeSort.cpp","tests":[{"id":1705511852920,"input":"2\n5\n4 1 3 9 7\n10\n10 9 8 7 6 5 4 3 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\fbkie\\OneDrive\\Documents\\CODEPTIT\\DSA\\MergeSort.cpp","group":"local","local":true}
