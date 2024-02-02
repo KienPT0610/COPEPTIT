@@ -9,13 +9,13 @@ int main(){
     cin.tie(NULL); cout.tie(NULL);
     int t; cin >> t;
     while(t--){
-        int n; cin >> n;
         string s; cin >> s;
-        map<char, int> mp;
-        int m = 0;
-        for(auto x : s) mp[x]++, m = max(m, mp[x]);
-        if(m <= ceil((float)s.length()/n)) cout << 1;
-        else cout << -1;
-        cout << endl;
+        ll tmp = 0;
+        ll m; cin >> m;
+        for(int i = 0; i < s.length(); i++) {
+            tmp = tmp*10 + (s[i] - '0');
+            tmp %= m;
+        }
+        cout << tmp << endl;
     }
 }

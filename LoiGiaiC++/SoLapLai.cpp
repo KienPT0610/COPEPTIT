@@ -9,13 +9,11 @@ int main(){
     cin.tie(NULL); cout.tie(NULL);
     int t; cin >> t;
     while(t--){
-        int n; cin >> n;
-        string s; cin >> s;
-        map<char, int> mp;
-        int m = 0;
-        for(auto x : s) mp[x]++, m = max(m, mp[x]);
-        if(m <= ceil((float)s.length()/n)) cout << 1;
-        else cout << -1;
+        ll x, y, a; cin >> a >> x >> y;
+        ll s = __gcd(x, y);
+        while(s--) {
+            cout << a;
+        }
         cout << endl;
     }
 }

@@ -10,12 +10,9 @@ int main(){
     int t; cin >> t;
     while(t--){
         int n; cin >> n;
-        string s; cin >> s;
-        map<char, int> mp;
-        int m = 0;
-        for(auto x : s) mp[x]++, m = max(m, mp[x]);
-        if(m <= ceil((float)s.length()/n)) cout << 1;
-        else cout << -1;
+        int a[n]; for(auto &x:a) cin >> x;
+        prev_permutation(a, a+n);
+        for(auto x:a) cout << x << ' ';
         cout << endl;
     }
 }

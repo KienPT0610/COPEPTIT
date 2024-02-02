@@ -1,0 +1,17 @@
+// xau con nho nhat 1 2
+// xo
+// lam min anh
+// tich chap
+// nhan hai so nguyen lon
+// tinh toan tren day so
+// in ma tran 2 3
+// ma tran vuong lon nhat
+// bien doi A - B
+// uoc so chung cua hai so nguyen lon
+// so bitonic
+// dem so cach di chuyen
+// bon diem tren mp
+// phan tu chung cua ba day so
+// so nho nhat lon hon ai 235
+// so hoan hao
+// so lon nhat cua day con lt

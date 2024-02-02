@@ -9,13 +9,16 @@ int main(){
     cin.tie(NULL); cout.tie(NULL);
     int t; cin >> t;
     while(t--){
-        int n; cin >> n;
         string s; cin >> s;
         map<char, int> mp;
-        int m = 0;
-        for(auto x : s) mp[x]++, m = max(m, mp[x]);
-        if(m <= ceil((float)s.length()/n)) cout << 1;
-        else cout << -1;
-        cout << endl;
+        for(int i = 0; i < s.length(); i++) mp[s[i]]++;
+        int m = s.length()/2 + (s.size()%2==0?0:1);
+        int lc = 1;
+        for(auto x : mp) {
+            if(x.second>m) {
+                lc = 0; break;
+            }
+        }
+        cout << lc << endl;
     }
 }
