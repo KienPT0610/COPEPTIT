@@ -1,0 +1,1 @@
+{"name":"Local: KiemTraDayNgoacDung","url":"c:\\Users\\fbkie\\OneDrive\\Documents\\CODEPTIT\\DSA\\KiemTraDayNgoacDung.cpp","tests":[{"id":1708684798120,"input":"2\n[()]{}{[()()]()}\n[(])","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\fbkie\\OneDrive\\Documents\\CODEPTIT\\DSA\\KiemTraDayNgoacDung.cpp","group":"local","local":true}
